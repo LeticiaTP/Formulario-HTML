@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    
+    <title>Formulário</title>
+
+</head>
+<body>
+
+    <div class="cabecalho">
+        <h1 class="titulo">Cadastre-se em nosso site!</h1>
+        <p class="subtitulo">Insira suas informações.</p>
+    </div>
+    <br><br>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+        <div>
+            <label for="confirmacao"><strong>Receber confirmação de cadastro por:</strong></label>
+            <select id="confirmacao">
+                <option selected disabled value=""> Selecione </option>
+                <option> SMS </option>
+                <option> E-mail </option>
+                <option> Ligação </option>
+            </select>
+        </div>
+
+        <br>
+
+        <fieldset class="grupo">
+            <div class="assuntos">
+            <div id="check">
+                <label><strong>Escolha seus interesses:</strong></label><br><br>
+                <input type="checkbox" id="interesse1" name="interesse1" value="tecnologia">
+                <label for="interesse1"> Tecnologia <i class="fas fa-chalkboard"></i></label><br>
+                <input type="checkbox" id="interesse2" name="interesse2" value="musica">
+                <label for="interesse2"> Música <i class="fas fa-music"></i></label><br>
+                <input type="checkbox" id="interesse3" name="interesse3" value="cinema">
+                <label for="interesse3"> Cinema <i class="fas fa-film"></i></label><br>
+                <input type="checkbox" id="interesse4" name="interesse4" value="esportes">
+                <label for="interesse4"> Esportes <i class="fas fa-running"></i></label><br>
+                <input type="checkbox" id="interesse5" name="interesse" value="games">
+                <label for="interesse5"> Games <i class="fas fa-gamepad"></i></label><br>
+                <input type="checkbox" id="interesse6" name="interesse" value="culinaria">
+                <label for="interesse6"> Culinária <i class="fas fa-utensils"></i></label><br>
+                <input type="checkbox" id="interesse7" name="interesse7" value="vagas">
+                <label for="interesse7"> Saúde <i class="fas fa-user-md"></i></label><br>
+                <input type="checkbox" id="interesse8" name="interesse8" value="moda">
+                <label for="interesse8"> Moda <i class="fas fa-tshirt"></i></label><br>
+            </div>
+            <div id="check">
+                <label></label><br><br>
+                <input type="checkbox" id="interesse1" name="interesse1" value="tecnologia">
+                <label for="interesse1"> Educação <i class="fas fa-graduation-cap"></i></label><br>
+                <input type="checkbox" id="interesse2" name="interesse2" value="musica">
+                <label for="interesse2"> Viagem <i class="fas fa-route"></i></label><br>
+                <input type="checkbox" id="interesse3" name="interesse3" value="cinema">
+                <label for="interesse3"> Livros <i class="fas fa-book"></i></label><br>
+                <input type="checkbox" id="interesse4" name="interesse4" value="esportes">
+                <label for="interesse4"> Shopping <i class="fas fa-shopping-cart"></i></label><br>
+                <input type="checkbox" id="interesse5" name="interesse" value="games">
+                <label for="interesse5"> Design <i class="far fa-object-group"></i></label><br>
+                <input type="checkbox" id="interesse6" name="interesse" value="culinaria">
+                <label for="interesse6"> Carros <i class="fas fa-car"></i></label><br>
+                <input type="checkbox" id="interesse7" name="interesse7" value="vagas">
+                <label for="interesse7"> Leis <i class="fas fa-gavel"></i></label><br>
+                <input type="checkbox" id="interesse8" name="interesse8" value="moda">
+                <label for="interesse8"> Idiomas <i class="fas fa-language"></i></label><br>
+            </div>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <div class="escolha">
+            <label><strong>Deseja receber e-mails sobre nossas novidades?</strong></label>
+            <br><br>
+            <label>
+                <input type="radio" name="devweb" value="sim" checked> Avise-me!
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="nao"> Não, obrigado.
+            </label>
+        </div>
+
+        <div class="campo">
+                <br>
+                <label for="feedback"><strong> Como está sendo sua experiência com nosso site? </strong></label>
+                <textarea rows="5" style="width: 26em" id="feedback" name="feedback"></textarea>
+            </div>
+                <br>
+            <button class="botao" type="submit" onsubmit="">Concluído</button>
+    </form>
+
+    <script src="https://kit.fontawesome.com/a27764f56e.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
